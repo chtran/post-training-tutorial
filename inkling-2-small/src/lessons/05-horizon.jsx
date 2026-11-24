@@ -64,14 +64,14 @@ function CacheDemo() {
   for (let t = 1; t <= turns; t++) {
     const ctx = sys + per * t;
     total += ctx;
-    fresh += sticky ? per : ctx;
+    fresh += sticky && t > 1 ? per : ctx;
   }
   const hit = 1 - fresh / total;
   return (
     <Demo title="Every turn resends the whole conversation"
       takeaway={sticky
-        ? "With the agent pinned to one sampler that keeps its KV cache, each turn only prefills the new tokens: a " + Math.round(hit * 100) + "% prefix-cache hit rate over " + turns + " turns. TML reports above 93% for the real run, using DRAM to hold caches that do not fit in GPU memory."
-        : "Without sticky routing, each turn may land on a sampler that has never seen this conversation, and the whole context is prefilled again: " + (fresh / 1e6).toFixed(2) + "M prefill tokens instead of " + ((per * turns) / 1e6).toFixed(2) + "M. Prefill cost grows with the square of the number of turns."}>
+        ? "With the agent pinned to one sampler that keeps its KV cache, each turn after the first only prefills the new tokens: a " + Math.round(hit * 100) + "% prefix-cache hit rate over " + turns + " turns. TML reports above 93% for the real run, using DRAM to hold caches that do not fit in GPU memory."
+        : "Without sticky routing, each turn may land on a sampler that has never seen this conversation, and the whole context is prefilled again: " + (fresh / 1e6).toFixed(2) + "M prefill tokens instead of " + ((sys + per * turns) / 1e6).toFixed(2) + "M. Prefill cost grows with the square of the number of turns."}>
       <Slider label="Agent turns" value={turns} min={2} max={100} step={1} onChange={setTurns} />
       <label className="flex items-center gap-2 text-[13px] text-primary"><Switch checked={sticky} onCheckedChange={setSticky} />Sticky routing with a kept KV cache</label>
       <StatsRow columns={3}>
