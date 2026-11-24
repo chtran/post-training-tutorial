@@ -1,0 +1,130 @@
+https://thinkingmachines.ai/inkling/
+
+THINKING MACHINES
+Inkling
+Tinker
+Connectionism
+News
+Join us
+
+Inkling
+
+Open weights, ready to tinker
+
+Efficient models for text, images, and audio, available to fine-tune on Tinker.
+
+Try on Tinker
+The Inkling family
+Inkling 2 Mini
+NEW
+
+Our smallest model, a looped transformer that runs on a laptop and excels at agentic coding.
+
+Total
+26.4B
+Active
+3.4B
+Learn more
+Inkling 2 Small
+NEW
+
+Our most capable model, and the first of our second generation, with a big jump in agentic coding and vision.
+
+Total
+594B
+Active
+17B
+Learn more
+Inkling
+
+Our largest model, with native reasoning over text, images, and audio.
+
+Total
+975B
+Active
+41B
+Learn more
+Built for real work
+General intelligence
+
+Performs well across knowledge, math, and science.
+
+Agentic coding & tools
+
+Writes code and uses tools to get work done.
+
+Knowledge work
+
+Handles finance, legal, tax, and enterprise operations.
+
+Controllable effort
+
+Adjust thinking time to balance speed and performance.
+
+Forecasting & confidence
+
+Makes predictions with well-calibrated confidence.
+
+Visual & interactive design
+
+Designs and builds 3D scenes, games, and websites.
+
+Ready to customize
+
+Fine-tune Inkling for your domain on Tinker, our training platform.
+
+Try on Tinker
+
+Rightsholders and their authorized representatives can contact us about these models at legal@thinkingmachines.ai.
+
+Models
+Inkling 2 Mini
+Inkling 2 Small
+Inkling
+Interaction
+Tinker
+Overview
+Docs
+Status
+Company
+About
+Connectionism
+News
+Careers
+Legal
+Terms of service
+Privacy notice
+Security
+Disclosure policy
+Connect
+X
+LinkedIn
+YouTube
+Thinking Machines Lab © 2026
+
+LINKS:
+https://jobs.ashbyhq.com/ThinkingMachines
+https://status.thinkingmachines.ai/
+https://thinkingmachines.ai/
+https://thinkingmachines.ai/#join-us
+https://thinkingmachines.ai/blog/
+https://thinkingmachines.ai/blog/interaction-models/
+https://thinkingmachines.ai/blog/the-future-worth-building-is-human/
+https://thinkingmachines.ai/inkling/
+https://thinkingmachines.ai/legal/privacy/
+https://thinkingmachines.ai/legal/terms/
+https://thinkingmachines.ai/model-card/inkling-2-mini/
+https://thinkingmachines.ai/model-card/inkling-2-small/
+https://thinkingmachines.ai/model-card/inkling/
+https://thinkingmachines.ai/news/
+https://thinkingmachines.ai/news/inkling-2-mini/
+https://thinkingmachines.ai/news/inkling-2-small/
+https://thinkingmachines.ai/news/introducing-inkling/
+https://thinkingmachines.ai/security/disclosure-policy/
+https://thinkingmachines.ai/tinker/
+https://tinker-docs.thinkingmachines.ai/tinker/
+https://tinker.thinkingmachines.ai/playground?utm_source=blog&utm_campaign=inkling_model_release
+https://www.linkedin.com/company/thinkingmachinesai/
+https://www.youtube.com/@thinkymachines
+https://x.com/thinkymachines
+mailto:legal@thinkingmachines.ai
