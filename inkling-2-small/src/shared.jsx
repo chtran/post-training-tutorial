@@ -23,7 +23,7 @@ function Term({ children, def }) {
     </Tooltip>
   );
 }
-// Link to another lesson by id ("arch", "pretrain", "fp4", "rl", "infra", "align", "custom").
+// Link to another lesson by id ("pretrain", "midtrain", "rl", "stable", "horizon", "align", "custom").
 function LessonLink({ to, children }) {
   const { go, lessons } = useNav();
   const i = lessons.findIndex((l) => l.id === to);

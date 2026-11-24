@@ -87,7 +87,7 @@ function Tutorial() {
   const nav = useMemo(() => ({ go, lessons: NAV }), []);
   return (
     <PageLayout title="Inkling 2 Small, explained" themeToggle
-      subtitle="A seven-lesson tutorial on how Thinking Machines built Inkling 2 Small, from architecture and 4-bit pretraining to one joint RL run.">
+      subtitle="A seven-lesson tutorial on how Thinking Machines built Inkling 2 Small, from its pretraining data to one joint, asynchronous RL run.">
       <NavContext.Provider value={nav}>
         <div ref={top} className="flex flex-col gap-8 md:flex-row md:gap-10">
           <Sidebar cur={cur} seen={seen} go={go} jump={jump} />
