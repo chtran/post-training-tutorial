@@ -134,9 +134,11 @@ function Lesson() {
           models, filtered for correctness and alignment". Training a model on another model's outputs is a form of <Term def="Training one model (the student) to reproduce the behavior of another (the teacher). Here the student imitates sampled outputs, which is called sequence-level or off-policy distillation.">distillation</Term>.
           Per the Zhihu review, using Kimi K3 this way implies a training license from Moonshot AI, Kimi's developer.
         </P>
-        <Eq label="Midtraining objective (standard next-token loss over filtered trajectories; not written out by TML)">
-          <V>L</V>(<V>θ</V>) = − 𝔼<sub><V>τ</V> ∼ 𝒟<sub>H3/H4</sub></sub> Σ<sub><V>t</V></sub> log <V>p</V><sub><V>θ</V></sub>( <V>τ</V><sub><V>t</V></sub> | <V>τ</V><sub>&lt;<V>t</V></sub> ),
-          &nbsp;&nbsp; 𝒟 = {"{"} <V>τ</V> ∼ teachers : correct(<V>τ</V>) ∧ aligned(<V>τ</V>) {"}"} ∪ replay
+        <Eq label="Midtraining objective (standard next-token loss; TML does not write it out)">
+          <V>L</V>(<V>θ</V>) = − 𝔼<sub><V>τ</V> ∼ 𝒟<sub>H3/H4</sub></sub> Σ<sub><V>t</V></sub> log <V>p</V><sub><V>θ</V></sub>( <V>τ</V><sub><V>t</V></sub> | <V>τ</V><sub>&lt;<V>t</V></sub> )
+        </Eq>
+        <Eq label="The data it is taken over">
+          𝒟<sub>H3/H4</sub> = {"{"} <V>τ</V> ∼ earlier models : correct(<V>τ</V>) ∧ aligned(<V>τ</V>) {"}"} ∪ replay
         </Eq>
         <Where items={[
           [<V>τ</V>, "one trajectory: every token of reasoning, tool calls and tool results, in the deployment format"],
