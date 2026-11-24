@@ -132,7 +132,6 @@ function Lesson() {
         <P>
           The H3 and H4 mixtures "consisted mostly of trajectories sampled from earlier models including Kimi K3 and our own
           models, filtered for correctness and alignment". Training a model on another model's outputs is a form of <Term def="Training one model (the student) to reproduce the behavior of another (the teacher). Here the student imitates sampled outputs, which is called sequence-level or off-policy distillation.">distillation</Term>.
-          Per the Zhihu review, using Kimi K3 this way implies a training license from Moonshot AI, Kimi's developer.
         </P>
         <Eq label="Midtraining objective (standard next-token loss; TML does not write it out)">
           <V>L</V>(<V>θ</V>) = − 𝔼<sub><V>τ</V> ∼ 𝒟<sub>H3/H4</sub></sub> Σ<sub><V>t</V></sub> log <V>p</V><sub><V>θ</V></sub>( <V>τ</V><sub><V>t</V></sub> | <V>τ</V><sub>&lt;<V>t</V></sub> )
@@ -171,7 +170,7 @@ function Lesson() {
     else:
         keep += sample(pretraining_corpus)       # H3 replay
     return keep`}</pre>
-        <Src>TML launch post, "Training Inkling 2 Small" and "Safety and alignment"; the Kimi licensing remark is per the Zhihu review</Src>
+        <Src>TML launch post, "Training Inkling 2 Small" and "Safety and alignment"</Src>
       </Stage>
 
       <Stage step={3} title="What it set up">
@@ -180,7 +179,7 @@ function Lesson() {
           after it. Three things stand out.
         </P>
         <Findings items={[
-          <span><b>RL could start as one run.</b> The first Inkling needed an SFT bootstrap and then separate reasoning and agentic RL runs. Inkling 2 Small went from H4 straight into a single joint RL run over every task family (<LessonLink to="rl" />).</span>,
+          <span><b>RL could start as one run.</b> The first Inkling needed an SFT bootstrap before its RL. Inkling 2 Small went from H4 straight into a single joint RL run over every task family (<LessonLink to="rl" />).</span>,
           <span><b>Long context came from data, not from RL.</b> H3 trained at 1M tokens; the RL run itself used a 256K window and taught the model to compact its own context to go further (<LessonLink to="horizon" />).</span>,
           <span><b>Knowledge survived.</b> Held-out code loss moved from 0.2030 to only 0.2080 bits per byte across all of post-training, midtraining included (<LessonLink to="pretrain" />).</span>,
         ]} />

@@ -190,11 +190,10 @@ future = training_client.forward_backward(
           because they shrink the mean.
         </Surprise>
         <P>
-          The Zhihu review notes a caveat. Holding steady at a median staleness of 17 could mean the algorithm truly tolerates long
-          tails of staleness, or that the run simply did not contain many extremely long tasks. Thinking Machines' figures cannot
-          tell the two apart.
+          A caveat on reading the run: median staleness of 17 shows the loss copes with typical lag, but TML does not publish how
+          training behaves at the tail, for rollouts that are hundreds of updates old.
         </P>
-        <Src>TML launch post; Tinker docs; paper sections 3 and 5 and figures 2 to 4; Zhihu review, post-training section</Src>
+       <Src>TML launch post; Tinker docs; paper sections 3 and 5 and figures 2 to 4; Zhihu review, post-training section</Src>
       </Stage>
     </div>
   );

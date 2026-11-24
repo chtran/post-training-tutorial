@@ -5,7 +5,7 @@ const meta = {
   question: "What does it take to train coding, office work, vision, search and safety in a single RL run instead of several?",
   minutes: 12,
   takeaways: [
-    "All post-training RL was one joint run: 1,075 steps, over 17M rollouts and 3T tokens, over 9 days on 2,048 GPUs. The first Inkling instead ran separate reasoning and agentic RL and merged them by multi-teacher distillation.",
+    "All post-training RL was one joint run: 1,075 steps, over 17M rollouts and 3T tokens, over 9 days on 2,048 GPUs. Coding, office work, STEM, web apps, vision, tool use, search and safety all train together.",
     "Eight task families share the run, each with its own grader: hidden tests and programmatic checks for code, rubric-based LLM judges for documents and tool use, reference answers for STEM and vision, and pairwise reward models on screenshots for web apps.",
     "Shares of rollouts and of tokens are very different. Coding is 38.5% of rollouts but 65% of tokens; chat, safety and epistemics is 7.8% of rollouts and 0.2% of tokens.",
     "Effort level is sampled at random and given to the model, and a length penalty is part of the reward, so the model learns to trade speed against thoroughness on request.",
@@ -22,7 +22,7 @@ const MIX = [
   { c: "STEM and reasoning", r: 7.0, t: 7.6, g: "reference answers" },
   { c: "Web and app building", r: 4.7, t: 7.2, g: "pairwise reward model on screenshots" },
   { c: "Vision", r: 13.9, t: 3.0, g: "reference answers" },
-  { c: "Tool use and general agents", r: 17.1, t: 2.3, g: "rubric-based LLM judge, simulated users" },
+  { c: "Tool use and general agents", r: 17.1, t: 2.3, g: "rubric-based LLM judge" },
   { c: "Search", r: 2.0, t: 1.4, g: "not stated" },
   { c: "Chat, safety and epistemics", r: 7.8, t: 0.2, g: "not stated; see lesson 6" },
 ];
@@ -101,16 +101,15 @@ function Lesson() {
     <div className="flex flex-col">
       <Stage step={1} title="Why one run instead of several">
         <P>
-          The first Inkling was post-trained the way many labs do it: separate RL runs for separate skills (one for reasoning, one
-          for agentic work), and then a distillation step in which a single student learned to imitate several teachers.
+          A common way to post-train is in pieces: separate RL runs for separate skills, then a distillation step in which one
+          student imitates several teachers (Beam's <a className="underline" href="../beam/">MOPD merge</a> is an example).
           Splitting keeps each run simple. Each has one kind of task, one kind of grader and similar rollout lengths. But the
-          final merge is lossy, and skills that only appear when abilities combine, such as searching the web in the middle of a
-          coding task, never get trained directly.
+          merge is lossy, and skills that only appear when abilities combine, such as searching the web in the middle of a
+          coding task, are never trained directly.
         </P>
         <P>
-          Inkling 2 Small trains everything in <b>one joint run</b>. Every batch mixes coding in real repositories, terminal tasks,
-          document creation, STEM questions, vision, web app building, tool use with simulated users, and safety. The policy that
-          comes out is the released model; there is no merge step afterwards.
+          Inkling 2 Small trains everything in <b>one joint run</b>: coding, office and knowledge work, STEM, web and app
+          building, vision, tool use, search, and chat and safety share the same RL steps.
         </P>
         <StatsRow columns={4}>
           <StatCard label="Steps"><StatCardValue>1,075</StatCardValue><StatCardCaption>≈16K rollouts each (our arithmetic)</StatCardCaption></StatCard>
@@ -125,8 +124,7 @@ function Lesson() {
           goes into the run.
         </P>
         <KeyIdea>
-          A joint run trades simple, separate pipelines for one policy that is trained on <b>every skill together, with no merge
-          step</b>. The price is a run whose tasks, graders and rollout lengths vary enormously.
+          A joint run trades simple, separate pipelines for one policy that is trained on <b>every skill together</b>, with no merge step needed. The price is a run whose tasks, graders and rollout lengths vary enormously.
         </KeyIdea>
         <Src>TML launch post, "Training Inkling 2 Small", including the "Scale of the main RL run" table</Src>
       </Stage>

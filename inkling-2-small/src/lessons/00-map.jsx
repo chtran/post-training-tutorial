@@ -120,10 +120,9 @@ function Lesson() {
       <section className="flex flex-col gap-3">
         <H3>What changed from the first Inkling</H3>
         <P>
-          The first Inkling was post-trained in pieces: a short supervised warm-up on synthetic data, then separate reasoning and
-          agentic RL runs whose results were merged by distilling several teachers into one student. Inkling 2 Small moves the
-          warm-up into the data itself (the trajectory-heavy H3 and H4 phases) and replaces the separate runs with <b>one joint
-          RL run</b>. That choice is what makes the rest of the recipe necessary: once short chat tasks and four-hour coding tasks
+          The first Inkling started post-training with a short supervised warm-up on synthetic data from open-weights models
+          such as Kimi K2.5, then spent most of its compute on asynchronous RL. Inkling 2 Small moves the warm-up into the data
+          itself (the trajectory-heavy H3 and H4 phases) and puts every task family into <b>one joint RL run</b>. That choice is what makes the rest of the recipe necessary: once short chat tasks and four-hour coding tasks
           share one run, the trainer always has stale samples to learn from, and the infrastructure has to keep very long contexts
           cheap.
         </P>
