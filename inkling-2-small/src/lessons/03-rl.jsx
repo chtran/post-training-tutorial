@@ -113,7 +113,7 @@ function Lesson() {
           comes out is the released model; there is no merge step afterwards.
         </P>
         <StatsRow columns={4}>
-          <StatCard label="Steps"><StatCardValue>1,075</StatCardValue><StatCardCaption>rollout batch of 16K</StatCardCaption></StatCard>
+          <StatCard label="Steps"><StatCardValue>1,075</StatCardValue><StatCardCaption>≈16K rollouts each (our arithmetic)</StatCardCaption></StatCard>
           <StatCard label="Rollouts"><StatCardValue>17M+</StatCardValue><StatCardCaption>over 3T tokens</StatCardCaption></StatCard>
           <StatCard label="Hardware"><StatCardValue>2,048</StatCardValue><StatCardCaption>GPUs for 9 days</StatCardCaption></StatCard>
           <StatCard label="Compute"><StatCardValue>4×10²³</StatCardValue><StatCardCaption>FLOPs, learner + sampler</StatCardCaption></StatCard>

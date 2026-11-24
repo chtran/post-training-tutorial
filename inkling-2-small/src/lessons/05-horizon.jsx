@@ -29,7 +29,7 @@ function SyncDemo() {
   const d = lognormals(n, 7).sort((a, b) => a - b);
   const mean = d.reduce((a, b) => a + b, 0) / n, max = d[n - 1];
   const util = mean / max;
-  const show = d.filter((_, i) => i % Math.max(1, Math.floor(n / 16)) === 0).slice(-16);
+  const show = Array.from({ length: Math.min(16, n) }, (_, j) => d[Math.round((j * (n - 1)) / (Math.min(16, n) - 1))]);
   const fmt = (m) => (m >= 60 ? (m / 60).toFixed(1) + " h" : m.toFixed(0) + " min");
   return (
     <Demo title="A synchronous step waits for its slowest rollout"
@@ -47,7 +47,7 @@ function SyncDemo() {
       </div>
       <Small>
         A sample of the batch, sorted. Durations are drawn from a log-normal fitted to TML's two published quantiles (median 8 min,
-        p99 4 h); the shape of the real distribution is not published. The real run used batches of 16K rollouts.
+        p99 4 h); the shape of the real distribution is not published. The real run averaged about 16K rollouts per step (17M over 1,075 steps, our arithmetic).
       </Small>
     </Demo>
   );

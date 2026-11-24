@@ -1,0 +1,38 @@
+<div id="root"></div>
+<script type="text/jsx">
+const TUTORIALS = [
+  {
+    href: "beam/", title: "Beam post-training, explained", org: "Reflection AI", lessons: 7,
+    blurb: "The post-training pipeline of Reflection's Beam model, from its technical report: SFT, agentic RL, tasks and rewards, alignment, the MOPD merge, RL infrastructure, and quantized serving.",
+  },
+  {
+    href: "inkling-2-small/", title: "Inkling 2 Small, explained", org: "Thinking Machines Lab", lessons: 7,
+    blurb: "How Inkling 2 Small was trained, from pretraining data and agent-trajectory midtraining to one joint, asynchronous RL run with StableReinforce, long-horizon rollouts and alignment.",
+  },
+];
+
+function App() {
+  return (
+    <PageLayout title="Post-training, explained" themeToggle
+      subtitle="Visual, interactive tutorials on how frontier language models are trained after pretraining. Each one follows a model's published report, lesson by lesson: intuition, then math and code, then the results.">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {TUTORIALS.map((t) => (
+          <a key={t.href} href={t.href} className="block no-underline">
+            <Card className="h-full transition-colors hover:bg-wash"><CardContent><CardBody className="flex flex-col gap-2">
+              <div className="flex items-center gap-2"><Badge variant="blue">{t.lessons} lessons</Badge><Text size={12} className="text-secondary">{t.org}</Text></div>
+              <div className="text-[18px] font-semibold leading-7 text-primary">{t.title}</div>
+              <p className="text-[14px] leading-6 text-secondary">{t.blurb}</p>
+              <div className="pt-1 text-[13px] font-semibold text-blue">Open tutorial →</div>
+            </CardBody></CardContent></Card>
+          </a>
+        ))}
+      </div>
+      <p className="pt-6 text-[12.5px] leading-5 text-secondary">
+        Figures come from each model's own publications and are not independently verified. Toy demos, illustrative equations
+        and code are labelled as such. Source: <a className="underline" href="https://github.com/chtran/post-training-tutorial">github.com/chtran/post-training-tutorial</a>.
+      </p>
+    </PageLayout>
+  );
+}
+render(<App />);
+</script>
