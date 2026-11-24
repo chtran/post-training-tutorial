@@ -1,0 +1,101 @@
+https://thinkingmachines.ai/news/
+
+THINKING MACHINES
+Inkling
+Tinker
+Connectionism
+News
+Join us
+News
+Introducing Inkling 2 Mini
+Nov 20, 2026
+Introducing Inkling 2 Small
+Nov 5, 2026
+One Year of Tinker: Turning Your Expertise into Custom Models
+Oct 15, 2026
+Putting Task Expertise into RL Achieves State-of-the-Art Performance on Text-to-SQL
+Aug 27, 2026
+Announcing Safety Research Grants
+Aug 24, 2026
+Introducing Inkling-Small
+Jul 30, 2026
+Inkling: Our Open-Weights Model
+Jul 15, 2026
+Learning to Replicate Expert Judgment in Financial Tasks
+Jun 30, 2026
+Announcing Interactivity Research Grants
+May 19, 2026
+Training LLMs to Predict World Events (Guest Post with Mantic)
+Mar 19, 2026
+Thinking Machines Lab and NVIDIA Announce Long-Term Gigawatt-Scale Strategic Partnership
+Mar 10, 2026
+Tinker: General Availability and Vision Input
+Dec 12, 2025
+Tinker: Call for Community Projects
+Nov 7, 2025
+Tinker: Announcing Research and Teaching Grants
+Oct 29, 2025
+Announcing Tinker
+Oct 1, 2025
+
+For press and media inquiries, please reach out to comms@thinkingmachines.ai
+
+Models
+Inkling 2 Mini
+Inkling 2 Small
+Inkling
+Interaction
+Tinker
+Overview
+Docs
+Status
+Company
+About
+Connectionism
+News
+Careers
+Legal
+Terms of service
+Privacy notice
+Security
+Disclosure policy
+Connect
+X
+LinkedIn
+YouTube
+Thinking Machines Lab © 2026
+
+LINKS:
+https://jobs.ashbyhq.com/ThinkingMachines
+https://status.thinkingmachines.ai/
+https://thinkingmachines.ai/
+https://thinkingmachines.ai/#join-us
+https://thinkingmachines.ai/blog/
+https://thinkingmachines.ai/blog/interaction-models/
+https://thinkingmachines.ai/blog/the-future-worth-building-is-human/
+https://thinkingmachines.ai/inkling/
+https://thinkingmachines.ai/legal/privacy/
+https://thinkingmachines.ai/legal/terms/
+https://thinkingmachines.ai/news/
+https://thinkingmachines.ai/news/announcing-tinker/
+https://thinkingmachines.ai/news/call-for-community-projects/
+https://thinkingmachines.ai/news/inkling-2-mini/
+https://thinkingmachines.ai/news/inkling-2-small/
+https://thinkingmachines.ai/news/inkling-small/
+https://thinkingmachines.ai/news/interactivity-research-grants/
+https://thinkingmachines.ai/news/introducing-inkling/
+https://thinkingmachines.ai/news/learning-to-replicate-expert-judgment-in-financial-tasks/
+https://thinkingmachines.ai/news/nvidia-partnership/
+https://thinkingmachines.ai/news/one-year-of-tinker/
+https://thinkingmachines.ai/news/putting-task-expertise-into-rl/
+https://thinkingmachines.ai/news/safety-research-grants/
+https://thinkingmachines.ai/news/tinker-general-availability/
+https://thinkingmachines.ai/news/tinker-research-and-teaching-grants/
+https://thinkingmachines.ai/news/training-llms-to-predict-world-events/
+https://thinkingmachines.ai/security/disclosure-policy/
+https://thinkingmachines.ai/tinker/
+https://tinker-docs.thinkingmachines.ai/tinker/
+https://www.linkedin.com/company/thinkingmachinesai/
+https://www.youtube.com/@thinkymachines
+https://x.com/thinkymachines
+mailto:comms@thinkingmachines.ai

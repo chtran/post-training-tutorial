@@ -1,0 +1,88 @@
+https://thinkingmachines.ai/blog/
+
+THINKING MACHINES
+Inkling
+Tinker
+Connectionism
+News
+Join us
+Connectionism
+
+Shared science from the team
+
+End‑to‑End 4‑Bit Training
+Jack Cook in collaboration with others at Thinking Machines
+Nov 13, 2026
+A Safe Path to Open Weights
+Thinking Machines
+Jul 31, 2026
+The Future Worth Building Is Human
+Thinking Machines
+Jul 10, 2026
+Interaction Models: A Scalable Approach to Human-AI Collaboration
+Thinking Machines
+May 11, 2026
+On-Policy Distillation
+Kevin Lu in collaboration with others at Thinking Machines
+Oct 27, 2025
+LoRA Without Regret
+John Schulman in collaboration with others at Thinking Machines
+Sep 29, 2025
+Modular Manifolds
+Jeremy Bernstein
+Sep 26, 2025
+Defeating Nondeterminism in LLM Inference
+Horace He in collaboration with others at Thinking Machines
+Sep 10, 2025
+Models
+Inkling 2 Mini
+Inkling 2 Small
+Inkling
+Interaction
+Tinker
+Overview
+Docs
+Status
+Company
+About
+Connectionism
+News
+Careers
+Legal
+Terms of service
+Privacy notice
+Security
+Disclosure policy
+Connect
+X
+LinkedIn
+YouTube
+Thinking Machines Lab © 2026
+
+LINKS:
+https://jobs.ashbyhq.com/ThinkingMachines
+https://status.thinkingmachines.ai/
+https://thinkingmachines.ai/
+https://thinkingmachines.ai/#join-us
+https://thinkingmachines.ai/blog/
+https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/
+https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/
+https://thinkingmachines.ai/blog/end-to-end-4-bit-training/
+https://thinkingmachines.ai/blog/interaction-models/
+https://thinkingmachines.ai/blog/lora/
+https://thinkingmachines.ai/blog/modular-manifolds/
+https://thinkingmachines.ai/blog/on-policy-distillation/
+https://thinkingmachines.ai/blog/the-future-worth-building-is-human/
+https://thinkingmachines.ai/inkling/
+https://thinkingmachines.ai/legal/privacy/
+https://thinkingmachines.ai/legal/terms/
+https://thinkingmachines.ai/news/
+https://thinkingmachines.ai/news/inkling-2-mini/
+https://thinkingmachines.ai/news/inkling-2-small/
+https://thinkingmachines.ai/news/introducing-inkling/
+https://thinkingmachines.ai/security/disclosure-policy/
+https://thinkingmachines.ai/tinker/
+https://tinker-docs.thinkingmachines.ai/tinker/
+https://www.linkedin.com/company/thinkingmachinesai/
+https://www.youtube.com/@thinkymachines
+https://x.com/thinkymachines
