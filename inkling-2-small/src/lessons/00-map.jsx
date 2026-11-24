@@ -107,7 +107,7 @@ function Lesson() {
       </header>
 
       <StatsRow columns={4}>
-        <StatCard label="Training tokens"><StatCardValue>~12.6T</StatCardValue><StatCardCaption>four phases, H1 to H4</StatCardCaption></StatCard>
+        <StatCard label="Training tokens"><StatCardValue>~12.55T</StatCardValue><StatCardCaption>four phases, H1 to H4</StatCardCaption></StatCard>
         <StatCard label="RL rollouts"><StatCardValue>17M+</StatCardValue><StatCardCaption>one run, 1,075 steps</StatCardCaption></StatCard>
         <StatCard label="RL compute"><StatCardValue>4×10²³</StatCardValue><StatCardCaption>FLOPs, 2,048 GPUs, 9 days</StatCardCaption></StatCard>
         <StatCard label="Longest rollouts"><StatCardValue>1.5M</StatCardValue><StatCardCaption>tokens at p99, 4 hours</StatCardCaption></StatCard>
