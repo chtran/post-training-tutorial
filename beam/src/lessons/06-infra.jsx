@@ -336,7 +336,8 @@ function CacheDemo() {
   const [o, setO] = useState(500);
   const [u, setU] = useState(1);
   const upd = new Set();
-  for (let j = 1; j <= u; j++) upd.add(Math.max(2, Math.round((n * j) / (u + 1))));
+  const uu = Math.min(u, n - 1);
+  for (let j = 1; j <= uu; j++) upd.add(1 + Math.ceil((j * (n - 1)) / (uu + 1)));
   let input = 0, fresh = 0;
   for (let k = 1; k <= n; k++) {
     const ctx = PROMPT + (k - 1) * (o + f);
